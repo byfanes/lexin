@@ -31,8 +31,8 @@ int main(void)
     free(lex.ctx);      
     printf("token count: %d\n",lex.tokens.count);
     printf("string count: %d\n",lex.strs.count);
-    uint32_t i = 0;
     #if 0
+    uint32_t i = 0;
     for(i = 0;i < lex.tokens.count;++i){
         print_token(&lex,lex.tokens.data[i],i);
     }

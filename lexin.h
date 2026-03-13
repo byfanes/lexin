@@ -227,7 +227,7 @@ void print_token
         } break;
         case token_str : {
             printf("token[%d]:%s %s\n",i,get_token_type_str(t),
-            l->strs.data[t.val.as_str_index]);
+            l->strs.data[t.val.as_str_index].str);
         } break;
         case token_key : {
             printf("token[%d]:%s %s\n",i,get_token_type_str(t),
